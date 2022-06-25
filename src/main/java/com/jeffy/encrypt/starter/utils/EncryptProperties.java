@@ -1,6 +1,7 @@
 package com.jeffy.encrypt.starter.utils;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 /**
  * 获取用户自定义的加密key

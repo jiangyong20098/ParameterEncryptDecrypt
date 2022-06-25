@@ -3,6 +3,7 @@ package com.jeffy.encrypt.starter.decrypt;
 import com.jeffy.encrypt.starter.anno.Decrypt;
 import com.jeffy.encrypt.starter.utils.AESUtils;
 import com.jeffy.encrypt.starter.utils.EncryptProperties;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.core.MethodParameter;
@@ -16,6 +17,7 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Type;
+import java.util.Base64;
 
 /**
  * RequestBodyAdvice 在你使用了 @RequestBody 注解的时候才会生效，
@@ -26,6 +28,7 @@ import java.lang.reflect.Type;
  */
 @EnableConfigurationProperties(EncryptProperties.class)
 @ControllerAdvice
+@Slf4j
 public class DecryptRequest extends RequestBodyAdviceAdapter {
     @Autowired
     EncryptProperties encryptProperties;
