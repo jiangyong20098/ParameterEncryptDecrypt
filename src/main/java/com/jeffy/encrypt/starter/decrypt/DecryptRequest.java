@@ -17,7 +17,6 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Type;
-import java.util.Base64;
 
 /**
  * RequestBodyAdvice 在你使用了 @RequestBody 注解的时候才会生效，

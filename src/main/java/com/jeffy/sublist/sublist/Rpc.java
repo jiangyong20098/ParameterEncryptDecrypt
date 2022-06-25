@@ -1,4 +1,4 @@
-package com.jeffy.sublist;
+package com.jeffy.sublist.sublist;
 
 import java.util.ArrayList;
 import java.util.List;

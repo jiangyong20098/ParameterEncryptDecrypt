@@ -1,4 +1,4 @@
-package com.jeffy.sublist;
+package com.jeffy.sublist.sublist;
 
 import lombok.extern.slf4j.Slf4j;
 
